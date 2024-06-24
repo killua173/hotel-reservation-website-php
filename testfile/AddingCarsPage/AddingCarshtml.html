@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Adding cars</title>
+    <link rel="stylesheet" type="text/css" href="AddingCarsCSS.css">
+    <link rel="stylesheet" type="text/css" href="../navBar.css">
+</head>
+<body>
+    <header>
+        <div id="navbar"></div>
+    </header>
+    <main>
+        <div class="container">
+            <form class="form" id="add-car">
+                <h1 class="form__title">Add Car</h1>
+                <div class="form__message form__message--error"></div>
+                <div class="form__input-group">
+                    <input type="file" class="form__input"  id="Pho1" required placeholder="Photo 1 URL">
+                    <div class="form__input-error-message"></div>
+                </div>
+                <div class="form__input-group">
+                    <input type="file" class="form__input"  id="Pho2" required placeholder="Photo 2 URL">
+                    <div class="form__input-error-message"></div>
+                </div>
+                <div class="form__input-group">
+                    <input type="text" class="form__input"  id="name1" required placeholder="Name">
+                    <div class="form__input-error-message"></div>
+                </div>
+                <div class="form__input-group">
+                    <input type="text" class="form__input"  id="location" required placeholder="Location">
+                    <div class="form__input-error-message"></div>
+                </div>
+                <p> Valid starting from the date : </p>
+                <div class="form__input-group">
+                    <input type="date" class="form__input"   id="willBeValidAt"  required >
+                    <div class="form__input-error-message"></div>
+                </div>
+                <p> Not valid after :  </p>
+                <div class="form__input-group">
+                    <input type="date" class="form__input"  id="validTill" required>
+                    <div class="form__input-error-message"></div>
+                </div>
+                <div class="form__input-group">
+                    <input type="number" class="form__input"  id="CostPerDay" required placeholder="$ per day">
+                    <div class="form__input-error-message"></div>
+                </div>
+                <button class="form__button" type="submit" id="addCarButton">Continue</button>
+
+            </form>
+        </div>
+    </main>
+    <footer class="footer">
+        <p>Address: 123 Main St, Anytown USA</p>
+        <p>Phone: 555-555-5555</p>
+    </footer>
+    <script src="../navBarAdmin.js"></script>
+    <script src="./AddingCarsjs.js"></script>
+</body>
+</html>
